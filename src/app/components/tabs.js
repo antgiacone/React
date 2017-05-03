@@ -1,9 +1,6 @@
 import React, {Component} from 'react';
 import {Tabs, Tab} from 'material-ui/Tabs';
 import Slider from 'material-ui/Slider';
-import lightBaseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
 const styles = {
   headline: {
@@ -33,7 +30,6 @@ export class PlaylistTabs extends Component {
     };
     render() {
         return (
-            <MuiThemeProvider muiTheme={getMuiTheme(lightBaseTheme)}>
             <Tabs
                 value={this.state.value}
                 onChange={this.handleChange}
@@ -59,7 +55,6 @@ export class PlaylistTabs extends Component {
                 </div>
                 </Tab>
             </Tabs>
-            </MuiThemeProvider>
         )
     }
 }

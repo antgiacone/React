@@ -8,9 +8,6 @@ import RaisedButton from 'material-ui/RaisedButton';
 import FlatButton from 'material-ui/FlatButton';
 import ExpandTransition from 'material-ui/internal/ExpandTransition';
 import TextField from 'material-ui/TextField';
-import lightBaseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
 /**
  * A contrived example using a transition between steps
@@ -131,7 +128,6 @@ export class HorizontalTransition extends Component {
     const {loading, stepIndex} = this.state;
 
     return (
-    <MuiThemeProvider muiTheme={getMuiTheme(lightBaseTheme)}>
       <div style={{width: '100%', maxWidth: 700, margin: 'auto'}}>
         <Stepper activeStep={stepIndex}>
           <Step>
@@ -148,7 +144,6 @@ export class HorizontalTransition extends Component {
           {this.renderContent()}
         </ExpandTransition>
       </div>
-      </MuiThemeProvider>
     );
   }
 }

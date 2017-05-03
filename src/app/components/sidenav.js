@@ -1,8 +1,5 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router';
-import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import Drawer from 'material-ui/Drawer';
 import MenuItem from 'material-ui/MenuItem';
 
@@ -16,7 +13,6 @@ export class Sidenav extends Component {
     handleClose = () => this.setState({open: false});
     render() {
         return (
-       <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
          <Drawer docked={false} openSecondary={true} open={this.state.open}>
           <MenuItem
           containerElement={<Link to="/signup" />}
@@ -37,7 +33,6 @@ export class Sidenav extends Component {
           <MenuItem>Channels</MenuItem>
           <MenuItem>Players</MenuItem>
         </Drawer>
-        </MuiThemeProvider>
         )
     }
 }

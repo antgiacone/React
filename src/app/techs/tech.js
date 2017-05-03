@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import {DashboardRefresh} from 'app/scenes/dashboard/components/refresh.js';
+import PerMedia from 'material-ui/svg-icons/action/perm-media';
 
 const styles = {
   tech: {
@@ -25,12 +27,11 @@ export class Tech extends Component {
   render() {
     return (
       <div style={styles.tech}>
-        <img style={styles.logo} src={this.props.tech.logo}/>
+        <DashboardRefresh/>
         <h3 style={styles.h3}>
           {this.props.tech.title}
         </h3>
-        <p>{this.props.tech.text1}</p>
-        <p>{this.props.tech.text2}</p>
+        <h1>{this.props.tech.count}</h1>
       </div>
     );
   }
