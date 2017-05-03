@@ -40,19 +40,5 @@
     "logo": "http://fountainjs.io/assets/imgs/eslint.png",
     "text1": "The pluggable linting utility for JavaScript and JSX.",
     "text2": "1 tool for identifying and reporting on patterns found in ECMAScript/JavaScript code."
-  },
-  {
-    "key": "karma",
-    "title": "Karma",
-    "logo": "http://fountainjs.io/assets/imgs/karma.png",
-    "text1": "Spectacular Test Runner for JavaScript",
-    "text2": "Things should be simple. We believe in testing and so we want to make it as simple as possible"
-  },
-  {
-    "key": "systemjs",
-    "title": "SystemJS",
-    "logo": "http://fountainjs.io/assets/imgs/systemjs.png",
-    "text1": "Universal dynamic module loader.",
-    "text2": "Loads ES6 modules, AMD, CommonJS and global scripts in the browser and NodeJS. Works with both Typescript and Babel."
   }
 ]

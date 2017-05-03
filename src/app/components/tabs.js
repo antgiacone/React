@@ -38,7 +38,7 @@ export class PlaylistTabs extends Component {
                 value={this.state.value}
                 onChange={this.handleChange}
             >
-                <Tab label="Tab A" value="a">
+                <Tab label="Items" value="a">
                 <div>
                     <h2 style={styles.headline}>Controllable Tab A</h2>
                     <p>
@@ -48,7 +48,7 @@ export class PlaylistTabs extends Component {
                     </p>
                 </div>
                 </Tab>
-                <Tab label="Tab B" value="b">
+                <Tab label="Schedules" value="b">
                 <div>
                     <h2 style={styles.headline}>Controllable Tab B</h2>
                     <p>

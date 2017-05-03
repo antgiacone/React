@@ -5,7 +5,6 @@ import {Link} from 'react-router';
 import {Button} from 'app/components/button.js';
 import {Header} from 'app/components/header.js';
 import {Title} from 'app/components/title.js';
-import {Sidenav} from 'app/components/sidenav.js';
 import {Techs} from 'app/techs/techs.js';
 import {Footer} from 'app/components/footer.js';
 
@@ -29,7 +28,6 @@ export class Main extends Component {
     return (
       <div>
         <Header/>
-        <Sidenav/>
         <Link to="/medias">Medias</Link>
         <Button/>
       </div>  

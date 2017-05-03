@@ -2,14 +2,16 @@ import 'babel-polyfill';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+import injectTapEventPlugin from 'react-tap-event-plugin';
 import {Router, Route, browserHistory} from 'react-router';
 
 import {Main} from './app/scenes/main.js';
-import {Dashboard} from './app/scenes/dashboard.js';
+import {Dashboard} from './app/scenes/dashboard/dashboard.js';
 import {Medias} from './app/scenes/medias.js';
-import {Playlists} from './app/scenes/playlists.js';
+import {Playlists} from './app/scenes/playlists/playlists.js';
 import {Signup} from './app/scenes/signup.js';
+
+injectTapEventPlugin();
 
 ReactDOM.render(
   <Router history={browserHistory}>
